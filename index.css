@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  background-image: url("./images/pattern-background-desktop.svg");
+}
+
+body p {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  margin: auto;
+  background-color: var(--very-pale-blue);
+  border-radius: 1rem;
+}
+
+.container img {
+  display: block;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.container .order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0rem 3rem;
+}
+
+.container .order h1 {
+  font-weight: 900;
+  margin-top: 2rem;
+}
+
+.container .order p {
+  text-align: center;
+}
+
+.container .annual-plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 3rem;
+}
+
+.container .annual-plan .left img {
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: var(--);
+}
+
+.container .annual-plan .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .annual-plan .left p {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .annual-plan .left p span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.container .annual-plan .purple {
+  color: var(--desaturated-blue);
+  font-weight: 600;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.container .annual-plan .purple:hover {
+  font-weight: 600;
+  color: var(--bright-blue);
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+
+.container .buttons .payment button {
+  background-color: var(--bright-blue);
+  padding: 1.25rem 6rem;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  color: var(--very-pale-blue);
+  cursor: pointer;
+}
+
+.container .buttons .payment button:hover {
+  background-color: var(--desaturated-blue);
+  cursor: pointer;
+}
+
+.container .buttons .cancel button {
+  background-color: none;
+  border: none;
+  padding: 1.25rem 6rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+.container .buttons .cancel button:hover {
+  font-weight: 600;
+}
